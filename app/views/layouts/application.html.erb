@@ -11,10 +11,15 @@
 <div id="user_nav">
   <% if current_user %>
     Signed in as <strong><%= current_user.name %></strong>!
-    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+    <%= link_to I18n.t('logout'), signout_path, id: "sign_out" %>
   <% else %>
-    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+    <%= link_to I18n.t('signin.facebook'), "/auth/facebook", id: "sign_in" %>
   <% end %>
+</div>
+<br/>
+<div id="locale">
+  <%= link_to 'US', root_path(:locale => 'en') %> |
+  <%= link_to 'PT', root_path(:locale => 'pt-BR') %>
 </div>
 
 <%= yield %>
