@@ -18,8 +18,8 @@
 </div>
 <br/>
 <div id="locale">
-  <%= link_to 'US', root_path(:locale => 'en') %> |
-  <%= link_to 'PT', root_path(:locale => 'pt-BR') %>
+  <%= link_to 'US', url_for(:locale => 'en') %> |
+  <%= link_to 'PT', url_for(:locale => 'pt-BR') %>
 </div>
 
 <%= yield %>
