@@ -5,6 +5,7 @@ gem 'rails', '3.2.8'
 gem 'omniauth-facebook'
 
 
+gem 'activeadmin'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
