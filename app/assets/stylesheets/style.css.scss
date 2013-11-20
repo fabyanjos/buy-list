@@ -1,0 +1,51 @@
+@import "bootstrap";
+$primary-color: #878787;
+body { 
+	@extend .container;
+	line-height: 1.5;
+	font-size: 16px;
+	text-align: justify;
+	color: $primary-color;
+}
+header {
+	@extend .nav;
+}
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 24px;
+}
+footer {
+	font-size: 12px;
+	border-top: 1px solid lighten($primary-color, 40%);
+	margin-top: 20px;
+	padding: 10px;
+}
+#logo {
+	@extend .pull-left;
+	font-size: 30px;
+	font-weight: bold;
+}
+#logo a, #logo a:hover {
+	text-decoration: none;
+	color: $primary-color;
+}
+#locale {
+	@extend .pull-right;
+	padding: 5px;
+}
+#intro {
+	@extend .well;
+	@extend .well-lg;
+	@extend .text-center;
+}
+#intro img {
+	width: 200px;
+}
+#home-content {
+	@extend .row;
+}
+#home-content article {
+	@extend .col-lg-4;
+}
