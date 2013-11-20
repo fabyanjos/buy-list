@@ -185,11 +185,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
   activeadmin
-=======
   bootstrap-sass!
->>>>>>> 5c93f78580ff73207101eea52dd03591966a0cde
   coffee-rails (~> 3.2.1)
   jquery-rails
   jquery-ui-rails
