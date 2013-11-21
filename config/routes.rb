@@ -1,9 +1,8 @@
 BuyList::Application.routes.draw do
-  
+  root to: "welcome#index"
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-
-  root to: "welcome#index"
 
   match 'auth/:provider/callback', to: 'sessions#create'
   match 'auth/failure', to: redirect('/')
